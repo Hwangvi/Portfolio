@@ -1,0 +1,173 @@
+.experience-section {
+  padding: 5rem 0;
+}
+
+.timeline {
+  position: relative;
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--border);
+}
+
+.experience-card {
+  position: relative;
+  padding-left: 3.5rem;
+  width: 100%;
+}
+
+.experience-dot {
+  position: absolute;
+  left: 10px;
+  top: 24px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00c6ff, #8b5cf6);
+  border: 3px solid var(--bg);
+  z-index: 2;
+}
+
+.experience-content {
+  position: relative;
+  z-index: 3;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 1.5rem;
+  transition: 0.25s ease;
+}
+
+.experience-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience-header h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.experience-company {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.experience-date {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.experience-description {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.tech-pill {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.experience-tech span {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.angular {
+  background: rgba(221, 0, 49, 0.12);
+  color: #dd0031;
+}
+
+.spring {
+  background: rgba(109, 179, 63, 0.14);
+  color: #6db33f;
+}
+
+.SASS {
+  background: rgba(223, 80, 218, 0.14);
+  color: #7952b3;
+}
+
+.mySQL {
+  background: rgba(45, 68, 241, 0.14);
+  color: #0235cc;
+}
+
+.typeScript{
+  background: rgba(1, 248, 231, 0.14);
+  color: #14e7f6;
+}
+
+.swagger{
+  background: rgba(0, 82, 4, 0.804);
+  color: #29c40a5a;
+}
+
+.so{
+  background: rgba(53, 49, 1, 0.804);
+  color: #c6d313d4;
+}
+
+.redes{
+  background: rgba(0, 48, 5, 0.804);
+  color: #34d414fa;
+}
+
+.hardware{
+  background: rgba(90, 63, 9, 0.804);
+  color: #efa614dc;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 12px;
+  }
+
+  .experience-card {
+    padding-left: 2.8rem;
+  }
+
+  .experience-dot {
+    left: 4px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+}

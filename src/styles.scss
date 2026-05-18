@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+:root, [data-theme="light"] {
+  --bg:         #f8fafc;
+  --bg-nav:     rgba(248,250,252,0.85);
+  --surface:    #ffffff;
+  --surface-2:  #f1f5f9;
+  --border:     #e2e8f0;
+  --text:       #0f172a;
+  --text-muted: #64748b;
+  --accent:     #6366f1;
+}
+
+[data-theme="dark"] {
+  --bg:         #0f172a;
+  --bg-nav:     rgba(15,23,42,0.85);
+  --surface:    #1e293b;
+  --surface-2:  #334155;
+  --border:     #334155;
+  --text:       #f1f5f9;
+  --text-muted: #94a3b8;
+  --accent:     #818cf8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+h1,
+.navbar-brand,
+.role,
+.section-title {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.role::before {
+  content: '> ';
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.section-sub {
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.anim-base {
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.anim-fade-up    { opacity: 0; transform: translateY(40px); }
+.anim-fade-left  { opacity: 0; transform: translateX(-40px); }
+.anim-fade-right { opacity: 0; transform: translateX(40px); }
+.anim-zoom       { opacity: 0; transform: scale(0.88); }
+.anim-stagger    { opacity: 0; transform: translateY(24px); }
+
+
+.anim-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-base { transition: none !important; }
+  .anim-fade-up, .anim-fade-left,
+  .anim-fade-right, .anim-zoom, .anim-stagger {
+    opacity: 1;
+    transform: none;
+  }
+}

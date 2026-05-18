@@ -1,0 +1,139 @@
+.hero-section {
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.hero-greeting {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hero-name {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.hero-role {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 700;
+  background: linear-gradient(90deg, #00c6ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 540px;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+}
+
+.hero-btn {
+  border-radius: 999px;
+  padding: 0.85rem 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: 0.25s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-btn-outline {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.8rem 1.4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.25s ease;
+}
+
+.hero-btn-outline:hover {
+  transform: translateY(-2px);
+  background: var(--accent);
+  color: white;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00c6ff, #8b5cf6);
+   box-shadow: 0 0 40px rgba(139, 92, 246, 0.25);
+}
+
+.hero-image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 50%;
+  border: 4px solid var(--bg);
+  display: block;
+}
+
+.hero-image-col {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: 0.25s ease;
+}
+
+.contact-pill:hover {
+  border-color: var(--accent);
+  box-shadow:
+    0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-inline: auto;
+  }
+
+  .hero-image {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-image-col {
+    justify-content: flex-start;
+  }
+}
