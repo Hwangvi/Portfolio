@@ -40,10 +40,17 @@
 }
 
 .project-image-wrapper {
+  position: relative;
   height: 280px;
   overflow: hidden;
   width: 100%;
   border-bottom: 1px solid var(--border);
+}
+.demo-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
 }
 
 .project-image {
