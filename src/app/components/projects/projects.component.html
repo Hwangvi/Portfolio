@@ -12,7 +12,9 @@
         </p>
       </div>
 
-      <div class="col-md-12">
+
+      <div class="row g-4">
+        <div class="col-md-6">
         <div class="project-card h-100">
           <div class="project-image-wrapper bg-black-custom">
             <img
@@ -25,12 +27,15 @@
           <div class="project-content">
             <h3 class="project-title">EcoStream</h3>
             <p class="project-description">
-              Plataforma avanzada de telemetría urbana que procesa datos ambientales en tiempo real.
-  La arquitectura se basa en un modelo dirigido por eventos mediante <strong>Apache Kafka</strong>,
-  garantizando una alta concurrencia y escalabilidad, apoyada por <strong>Redis</strong> para
-  una gestión de caché ultrarrápida y persistencia de estados temporales. Además, integra un
-  agente inteligente basado en <strong>IA (Groq/Llama 3.1)</strong>, que realiza un análisis
-  cognitivo profundo y auditoría automatizada de los datos, optimizando la toma de decisiones.
+              Plataforma avanzada de telemetría urbana que procesa datos
+              ambientales en tiempo real. La arquitectura se basa en un modelo
+              dirigido por eventos mediante <strong>Apache Kafka</strong>,
+              garantizando una alta concurrencia y escalabilidad, apoyada por
+              <strong>Redis</strong> para una gestión de caché ultrarrápida y
+              persistencia de estados temporales. Además, integra un agente
+              inteligente basado en <strong>IA (Groq/Llama 3.1)</strong>, que
+              realiza un análisis cognitivo profundo y auditoría automatizada de
+              los datos, optimizando la toma de decisiones.
             </p>
 
             <div class="tech-stack">
@@ -53,12 +58,12 @@
                 <i class="bi bi-github"></i>
               </a>
               <a
-                  href="https://ecostream.hwangvi.dev"
-                  target="_blank"
-                  class="github-btn"
-                >
-                  <i class="bi bi-link-45deg"></i>
-                </a>
+                href="https://ecostream.hwangvi.dev"
+                target="_blank"
+                class="github-btn"
+              >
+                <i class="bi bi-link-45deg"></i>
+              </a>
               <a
                 href="https://youtu.be/4_OAYPGkOo0"
                 target="_blank"
@@ -71,7 +76,65 @@
         </div>
       </div>
 
-      <div class="row g-4">
+      <div class="col-md-6">
+        <div class="project-card h-100">
+          <div class="project-image-wrapper bg-white">
+            <img
+              src="images/projects/Siantesis.png"
+              alt="Siantesis"
+              class="project-image"
+            />
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">SIAntesis</h3>
+            <p class="project-description">
+              Plataforma avanzada de debate analítico y toma de decisiones que
+              emula la deliberación humana mediante un ecosistema multi-agente
+              en <strong>LangGraph</strong>. El núcleo confronta de forma
+              cíclica un enfoque idealista (Estratega) y uno realista (Auditor),
+              procesado mediante inferencia de ultra baja latencia con
+              <strong>Groq (Llama 3.3)</strong>. La interfaz ofrece una
+              experiencia interactiva en pantalla dividida sincronizada en
+              tiempo real mediante <strong>Server-Sent Events (SSE)</strong>, e
+              integra memoria semántica histórica a largo plazo basada en
+              búsquedas de similitud vectorial utilizando
+              <strong>PostgreSQL (PgVector)</strong>.
+            </p>
+
+            <div class="tech-stack">
+              <span class="tech-pill fastapi">FastAPI</span>
+              <span class="tech-pill react">React</span>
+              <span class="tech-pill langchain">LangChain</span>
+              <span class="tech-pill postgresql">PgVector</span>
+              <span class="tech-pill groq">Groq</span>
+              <span class="tech-pill tailwindcss">Tailwind</span>
+              <span class="tech-pill docker">Docker</span>
+              <span class="tech-pill github-actions">CI/CD</span>
+            </div>
+
+            <div class="project-actions">
+              <a
+                href="https://github.com/Hwangvi/Siantesis"
+                target="_blank"
+                class="github-btn"
+                title="Ver Repositorio"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+              <a
+                href="https://siantesis.hwangvi.dev"
+                target="_blank"
+                class="github-btn"
+                title="Ver Aplicación"
+              >
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
         <div class="col-md-6">
           <div class="project-card h-100">
             <div class="project-image-wrapper bg-salmon-custom">
@@ -86,9 +149,16 @@
               <h3 class="project-title">Pomodoro Timer</h3>
 
               <p class="project-description">
-                Aplicación de productividad de alto rendimiento diseñada bajo un enfoque de arquitectura modular y escalable. Desarrollada con React y Vite para ofrecer una interfaz fluida y una respuesta ultrarrápida.
-
-La aplicación integra un pipeline de CI/CD mediante GitHub Actions, garantizando la validación automática del código y un despliegue continuo eficiente. El entorno de desarrollo está estandarizado mediante Docker, asegurando la paridad entre el entorno de desarrollo y producción. Enfocada en la gestión eficiente del tiempo, integra Tailwind CSS para una UI consistente, moderna y altamente responsiva.
+                Aplicación de productividad de alto rendimiento diseñada bajo un
+                enfoque de arquitectura modular y escalable. Desarrollada con
+                React y Vite para ofrecer una interfaz fluida y una respuesta
+                ultrarrápida. La aplicación integra un pipeline de CI/CD
+                mediante GitHub Actions, garantizando la validación automática
+                del código y un despliegue continuo eficiente. El entorno de
+                desarrollo está estandarizado mediante Docker, asegurando la
+                paridad entre el entorno de desarrollo y producción. Enfocada en
+                la gestión eficiente del tiempo, integra Tailwind CSS para una
+                UI consistente, moderna y altamente responsiva.
               </p>
 
               <div class="tech-stack">
@@ -97,7 +167,6 @@ La aplicación integra un pipeline de CI/CD mediante GitHub Actions, garantizand
                 <span class="tech-pill docker"> Docker </span>
                 <span class="tech-pill mySQL"> MySQL </span>
                 <span class="tech-pill tailwindcss">Tailwind</span>
-
               </div>
 
               <div class="project-actions">
@@ -232,7 +301,6 @@ La aplicación integra un pipeline de CI/CD mediante GitHub Actions, garantizand
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
